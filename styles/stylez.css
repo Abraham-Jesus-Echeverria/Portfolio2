@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"); 
+:root { 
+    --primari-color: #000; 
+    --secundari-color: #fff; 
+}
+
+body{ 
+    background-color: var(--primari-color); 
+    font-family: "Roboto Slab", serif;
+} 
+.navbar{ 
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    /* background-color: rebeccapurple;  */
+}
+.image_nav_container{ 
+    width: 100px; 
+    height: 100px; 
+} 
+.list_nav_container{  
+    width: 40%;
+    display: flex;  
+    justify-content: space-between;  
+}
+.nav_item, .nav_item a{ 
+    text-decoration: none;  
+    list-style: none;  
+    color: var(--secundari-color);  
+    font-size: 1.3rem; 
+}
+.nav_item a:hover{  
+    color: red; 
+}
+.nav_logo{ 
+    max-width: 100%;
+    height: auto; 
+} 
+
+/* ________________________________________main_________________________________ */ 
+.image_presentation_container{ 
+    background: url(../assets/images/presentacion.jpg) no-repeat fixed; 
+    width: 100%; 
+    height: 80vh;  
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+     margin-bottom: 100px;  
+} 
+.title_presentation{ 
+    width: 700px; 
+    /* background-color: red;   */
+    color: var(--secundari-color); 
+    text-align: center; 
+    font-size: 3rem;
+}
+.text_presentation{ 
+    color: var(--secundari-color); 
+    font-size: 1.5rem;  
+    text-align: center; 
+} 
+/* ________________________________about____________________________________ */
+.secction_style{ 
+    color: var(--secundari-color);
+    margin-bottom: 100px; 
+} 
+.secction_title{ 
+    font-size: 2.5rem; 
+    text-align: center;  
+    width: 60%;  
+    margin: 0 auto 30px auto; 
+    padding: 10px 0 50px 0;  
+    border-bottom: 2px solid var(--secundari-color);  
+    color: var(--secundari-color);
+} 
+.aboutMe_content{ 
+    display: flex; 
+    justify-content: center; 
+}
+.aboutMe_secundarytitle_container{ 
+    width: 40%; 
+    text-align: right; 
+    font-size: 2rem; 
+    margin-right: 20px; 
+}  
+
+.aboutMe_text_container{ 
+    width: 40%;  
+    text-align: left; 
+    font-size: 1.3rem;
+} 
+.secundary_title{ 
+    line-height: 3.3rem;
+}
+.text{ 
+    line-height: 2.3rem;
+}
+/* ____________________________________tecnologies________________________________ */ 
+.tecnologies_content{ 
+    display: grid; 
+    grid-template-columns: repeat(3, 200px); 
+    grid-auto-rows: 200px;   
+    gap: 20px; 
+    justify-content: center; 
+}
+.card{ 
+    background-color: rebeccapurple; 
+} 
+
+/* ______________________________proyects___________________________________ */
+.proyects_content{ 
+    display: grid; 
+    grid-template-columns: repeat(2, 40%);  
+    grid-auto-rows: 300px;  
+    justify-content: center; 
+    gap: 20px; 
+}
+.cardP{ 
+    background-color: gray; 
+}
+
+/* _____________________________contacto________________________________ */ 
