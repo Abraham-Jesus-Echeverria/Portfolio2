@@ -6,7 +6,7 @@
 
 body{ 
     background-color: var(--primari-color); 
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab", serif; 
 } 
 .navbar{ 
     display: flex;  
@@ -40,7 +40,9 @@ body{
 /* ________________________________________main_________________________________ */ 
 .image_presentation_container{ 
     background: url(../assets/images/presentacion.jpg) no-repeat fixed; 
-    width: 100%; 
+    width: 90%; 
+    border-radius: 30px; 
+    margin: 0 auto; 
     height: 80vh;  
     display: flex; 
     justify-content: center; 
@@ -76,16 +78,18 @@ body{
 .aboutMe_content{ 
     display: flex; 
     justify-content: center; 
+    width: 90%;  
+    margin: 0 auto; 
 }
 .aboutMe_secundarytitle_container{ 
-    width: 40%; 
+    width: 50%; 
     text-align: right; 
     font-size: 2rem; 
-    margin-right: 20px; 
+    margin-right: 1.5rem; 
 }  
 
 .aboutMe_text_container{ 
-    width: 40%;  
+    width: 50%;  
     text-align: left; 
     font-size: 1.3rem;
 } 
@@ -98,7 +102,7 @@ body{
 /* ____________________________________tecnologies________________________________ */ 
 .tecnologies_content{ 
     display: grid; 
-    width: 80%;  
+    width: 90%;  
     margin: 0 auto; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
     grid-auto-rows: 200px;   
@@ -106,14 +110,45 @@ body{
     justify-content: center; 
 }
 .card{ 
-    background-color: rebeccapurple;  
+    border: 2px solid var(--secundari-color);  
+    border-radius: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: column; 
+    font-size: 2.5rem;
     /* min-width: 300px;  */
 }  
+.card i{ 
+    margin-bottom: 10px; 
+}
 
+.html:hover{ 
+    background-color: #ED7930 ; 
+    color: var(--primari-color);
+} 
+.css:hover{ 
+    background-color: #00B7F3;  
+    color: var(--primari-color);
+}
+.Js:hover{ 
+    background-color: #F7DF1E; 
+    color: var(--primari-color);
+}
+.git:hover{ 
+    background-color: #DE4C36; 
+    color: var(--primari-color); 
+}
+.gitHub:hover{ 
+    background-color: var(--secundari-color); 
+    color:var(--primari-color);  
+}
 /* ______________________________proyects___________________________________ */
 .proyects_content{ 
+    width: 90%;  
+    margin: 0 auto; 
     display: grid; 
-    grid-template-columns: repeat(2, 30%);  
+    grid-template-columns: repeat(2, 49%);  
     grid-auto-rows: 300px;  
     justify-content: center; 
     gap: 20px; 
