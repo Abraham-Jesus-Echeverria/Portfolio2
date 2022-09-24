@@ -8,15 +8,18 @@ body{
     background-color: var(--primari-color); 
     font-family: "Roboto Slab", serif; 
 } 
-.navbar{ 
+.navbar{  
+    width: 100vw;  
+    background-color: rgba(0, 0, 0, 0.3); 
+    position: fixed; 
+    top: 0; 
     display: flex;  
-    justify-content: center; 
     align-items: center; 
+    /* margin-bottom: 100px;  */
     /* background-color: rebeccapurple;  */
 }
 .image_nav_container{ 
-    width: 100px; 
-    height: 100px; 
+    width: 80px;  
 } 
 .list_nav_container{  
     width: 40%;
@@ -24,10 +27,11 @@ body{
     justify-content: space-between;  
 }
 .nav_item, .nav_item a{ 
+    margin-right: 15px; 
     text-decoration: none;  
     list-style: none;  
     color: var(--secundari-color);  
-    font-size: 1.3rem; 
+    font-size: 1.3rem;  
 }
 .nav_item a:hover{  
     color: red; 
@@ -39,28 +43,37 @@ body{
 
 /* ________________________________________main_________________________________ */ 
 .image_presentation_container{ 
-    background: url(../assets/images/presentacion.jpg) no-repeat fixed; 
-    width: 90%; 
-    border-radius: 30px; 
-    margin: 0 auto; 
+    background: url(../assets/images/Presentacion2.jpg) fixed;   
+    width: 100vw; 
     height: 80vh;  
     display: flex; 
+    flex-direction: column; 
     justify-content: center; 
     align-items: center;  
      margin-bottom: 100px;  
-} 
+}  
+.presentation_logo{ 
+    width: 20%; 
+}
+.presentation_logo img{ 
+    max-width: 100%; 
+}
 .title_presentation{ 
+    margin: 0; 
     width: 700px; 
-    /* background-color: red;   */
-    color: var(--secundari-color); 
+    color: var(--secundari-color);  
+    line-height: 4rem; 
     text-align: center; 
     font-size: 3rem;
+    background-color: rebeccapurple; 
+    padding: 0; 
+    margin: 0;
 }
-.text_presentation{ 
+/* .text_presentation{ 
     color: var(--secundari-color); 
     font-size: 1.5rem;  
     text-align: center; 
-} 
+}  */
 /* ________________________________about____________________________________ */
 .secction_style{ 
     color: var(--secundari-color);
