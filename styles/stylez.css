@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"); 
 :root { 
     --primari-color: #000; 
-    --secundari-color: #fff; 
+    --secundari-color: #fff;  
+    --color3: #1E2131; 
+    --color4: #24253C; 
 }
 
 body{ 
-    background-color: var(--primari-color); 
+    background-color: var(--color4);   
     font-family: "Roboto Slab", serif; 
-} 
+}  
+header{ 
+    margin: 0 auto;
+}
 .navbar{  
-    width: 100vw;  
+    width: 100%;  
     background-color: rgba(0, 0, 0, 0.3); 
     position: fixed; 
     top: 0; 
@@ -19,7 +24,8 @@ body{
     /* background-color: rebeccapurple;  */
 }
 .image_nav_container{ 
-    width: 80px;  
+    width: 60px;  
+    margin-left: 20px;  
 } 
 .list_nav_container{  
     width: 40%;
@@ -43,31 +49,34 @@ body{
 
 /* ________________________________________main_________________________________ */ 
 .image_presentation_container{ 
-    background: url(../assets/images/Presentacion2.jpg) fixed;   
-    width: 100vw; 
-    height: 80vh;  
+    background: url(../assets/images/Presentacion2.jpg) fixed no-repeat center;    
+    width: 100%; 
+    height: 100vh;  
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center;  
-     margin-bottom: 100px;  
+     /* margin-bottom: 100px;   */
 }  
 .presentation_logo{ 
-    width: 20%; 
+    width: 200px; 
 }
 .presentation_logo img{ 
     max-width: 100%; 
 }
 .title_presentation{ 
-    margin: 0; 
-    width: 700px; 
+    width: 100%;  
     color: var(--secundari-color);  
     line-height: 4rem; 
     text-align: center; 
-    font-size: 3rem;
-    background-color: rebeccapurple; 
+    font-size: 3rem; 
+    font-weight: bold;
     padding: 0; 
     margin: 0;
+} 
+.title_presentation span { 
+    font-size: 2rem; 
+    font-weight: normal; 
 }
 /* .text_presentation{ 
     color: var(--secundari-color); 
@@ -82,36 +91,65 @@ body{
 .secction_title{ 
     font-size: 2.5rem; 
     text-align: center;  
-    width: 60%;  
-    margin: 0 auto 30px auto; 
-    padding: 10px 0 50px 0;  
-    border-bottom: 2px solid var(--secundari-color);  
+    margin-bottom: 50px; 
+    /* border-bottom: 2px solid var(--secundari-color);   */
     color: var(--secundari-color);
 } 
-.aboutMe_content{ 
+.aboutMe_content{  
+    /* border: 2px solid var(--secundari-color);   */ 
+    box-sizing: border-box;
+    padding: 30px;  
+    /* border-radius: 30px;   */
+    background-color: var(--color3);  
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    justify-content: space-between;
+    width: 100%;  
+    margin: 0 auto; 
+} 
+.aboutMe_information{  
+    background-color: var(--color4); 
+    width: 52%; 
+    order: 1;
+    border: 2px solid var(--secundari-color);   
+    border-radius: 30px; 
+    box-sizing: border-box; 
+    padding: 30px; 
+}
+.aboutMe_img_container{ 
+    width: 40%;  
+    background-color: rebeccapurple;  
+    border-radius: 30px; 
+    height: 450px;   
     display: flex; 
     justify-content: center; 
-    width: 90%;  
-    margin: 0 auto; 
-}
-.aboutMe_secundarytitle_container{ 
-    width: 50%; 
-    text-align: right; 
-    font-size: 2rem; 
-    margin-right: 1.5rem; 
-}  
+    align-items: center; 
+    order: 0;
+    margin-right: 40px;
 
-.aboutMe_text_container{ 
-    width: 50%;  
-    text-align: left; 
-    font-size: 1.3rem;
-} 
+}
+.aboutMe_img{ 
+    width: 70%;
+    /* background-color: red;  */
+}
+.aboutMe_img img { 
+    max-width: 100%; 
+}
 .secundary_title{ 
-    line-height: 3.3rem;
+    line-height: 3rem;
+    margin: 0;
+    font-size: 1.7rem; 
+    margin-right: 1.5rem;
 }
 .text{ 
     line-height: 2.3rem;
+    font-size: 1.3rem;
 }
+.separation_element{ 
+    display: flex; 
+    flex-direction: row; 
+} 
 /* ____________________________________tecnologies________________________________ */ 
 .tecnologies_content{ 
     display: grid; 
