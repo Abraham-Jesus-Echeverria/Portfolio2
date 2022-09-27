@@ -19,7 +19,12 @@
                 <li class="nav_item"><a href="">Tecnologias</a></li>
                 <li class="nav_item"><a href="">Proyectos</a></li>
                 <li class="nav_item"><a href="">Contactame</a></li> 
-            </ul> 
+            </ul>  
+            <div class="redesS">  
+               <a href="#"><i class="fa-brands fa-linkedin redesS_icon"></i></a> 
+               <a href="#"><i class="fa-brands fa-github redesS_icon"></i></a> 
+               <a href="#"><i class="fa-brands fa-codepen redesS_icon"></i></a>
+            </div>
     </nav>   
 
     <div class="image_presentation_container">   
@@ -31,57 +36,119 @@
 
     </header>
     <main>   
-        <section class="secction_style"> 
+        <section> 
  
             <div class="aboutMe_content">  
                 <h2 class="secction_title">Acerca de mi...</h2> 
                 <div class="separation_element"> 
-                    <div class="aboutMe_information"> 
+                    <div class="aboutMe_information background_p"> 
                         <div class="aboutMe_secundarytitle_container"> 
                             <h3 class="secundary_title">Soy una persona apasionada por la tecnologia...</h3> 
                         </div>  
-                        <div class="aboutMe_text_container"> <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, iure dolorum pariatur illo officiis vel molestiae possimus accusamus ut placeat deleniti eveniet tenetur earum consectetur velit. Delectus qui est velit!</p></div>
+                        <div class="aboutMe_text_container"> <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, iure dolorum pariatur illo officiis vel molestiae possimus accusamus ut placeat deleniti eveniet tenetur earum consectetur velit. Delectus qui est velit!</p></div> 
                     </div>
-                     <div class="aboutMe_img_container">  
+                     <div class="aboutMe_img_container background_p2">  
                         <div class="aboutMe_img"> 
                             <img src="./assets/images/Fotografia.png" alt="Fotografia personal"> 
                         </div> 
-                     </div> 
+                     </div>  
                  </div>
                 
             </div>
         </section> 
 
-        <section class="secction_style"> 
+        <section class="secction_style_2 background_p"> 
             <h2 class="secction_title">Tecnologias</h2>  
             <div class="tecnologies_content"> 
                 <div class="html card"> <i class="fa-brands fa-html5"></i> HTML5</div> 
                 <div class="css card"> <i class="fa-brands fa-css3-alt"></i> CSS3</div> 
                 <div class="Js card"> <i class="fa-brands fa-js"></i> JavaScript</div> 
                 <div class="git card"> <i class="fa-brands fa-git-alt"></i> git </div> 
-                <div class="gitHub card"> <i class="fa-brands fa-github"></i>gitHub </div>  
+                <div class="gitHub card"> <i class="fa-brands fa-github"></i>gitHub </div> 
+                <div class="gitHub card"> <i class="fa-brands fa-bootstrap"></i> </i>bootstrap</div> 
+                  
             </div>
         </section> 
 
-        <section class="secction_style"> 
+        <section class="secction_style background_p2"> 
             <h2 class="secction_title">Proyectos</h2> 
             <div class="proyects_content"> 
-                <div class="cardP"></div> 
-                <div class="cardP"></div> 
-                <div class="cardP"></div> 
-                <div class="cardP"></div> 
-                <div class="cardP"></div>
-                <div class="cardP"></div>
+                <div class="cardP1 card-transition card-flex"><div class="card_content"> </div></div> 
+                <div class="cardP2 card-transition card-flex"><div class="card_content"> </div></div> 
+                <div class="cardP3 card-transition card-flex"><div class="card_content"> </div></div> 
+                <div class="cardP4 card-transition card-flex"><div class="card_content"> </div></div> 
+                <div class="cardP5 card-transition card-flex"><div class="card_content"> </div></div>
+                <div class="cardP6 card-transition card-flex"><div class="card_content"> </div></div>
             </div>
         </section> 
 
-        <section class="section_style"> 
+        <section class="secction_style_2 background_p" > 
             <h2 class="secction_title">Contacto</h2> 
-            <div class="contacto">   
+            <div class="contacto">    
+                <div class="form_container">   
+                    <div class="inputs_content"> 
+                    <form id="formulario" >  
+                        <label for="full_name" class="label_name styles_long_labels">Nombre completo
+                            <input type="text" name="full_Name" id="full_name" class="input_name" placeholder="Abraham Jesus ...">   
+                            <p class="error_mensaje">Ingresa tu nombre sin caracteres especiales y sin números</p> 
+                        </label> 
+        
+                        <div class="email_phone_container"> 
+                        <label for="telefono" class="styles_short_labels phone_label">Número telefónico  
+                            <input type="text" name="Phone" id="telefono" class="input_phone" placeholder="9994233416">    
+                            <p class="error_mensaje">Ingresa un número telefónico válido</p>
+                        </label> 
+                     
+                        <label for="Email" class="styles_short_labels email_label">Correo electrónico 
+                            <input type="text" name="email" id="Email" class="input_email" placeholder="Correo_ejemplo@gmail.com">   
+                            <p class="error_mensaje" id="error">Ingresa una dirección de correo válida</p> 
+                        </label> 
+                        </div>
+                         
+                        <label for="mensaje" class="label_mensaje styles_long_labels">Mensaje  
+                            <textarea type="text" name="mensaje" id="textarea"  cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea> 
+                            <p class="error_mensaje" >No puede escribir un mensaje con mas de 200 caracteres</p>
+                        </label> 
+                    <div class="submit_container">  
+                        <input type="submit" name="submit" id="buttonSubmit" value="Enviar" class="submit_button" required="none">
+                        <p class="mensaje_succes" id="suceesMensage"> lñfkgdñlgkñldfgkfdñlgk</p>    
+                    </div>
+                    </div> 
+                    </form>
+        
+                    <div class="info_container"> 
+                        <h2 class="info_title">Mas Información</h2>  
+                        <div class="icons_container">  
+                            <div class="items_icons_containers"> 
+                                <i class="icon fa-solid fa-location-dot"></i> 
+                                <p>Mérida Yucatán México </p>  
+                            </div> 
+                             <div class="items_icons_containers"> 
+                                <i class="icon fa-solid fa-phone"></i>
+                                <p>9994-23-34-16</p> 
+                            </div> 
+                            <div class="items_icons_containers">  
+                                <i class="icon fa-solid fa-envelope"></i> 
+                                <p>abraham.ech9@gmail.com</p>
+                            </div> 
+                         </div>
+                         <div class="vistme_container">   
+                            <h2 class="info_title">Visita mis redes sociales </h2>  
+                            <div class="card_rs_logos">  
+                               <a href="http://" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                               <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>  
+                               <a href="http://" target="_blank"><i class="fa-brands fa-codepen"></i></a> 
+                            </div>
+                        </div> 
+                    </div>
+        
+                </div>
 
             </div>
         </section>
     </main> 
-    <script src="https://kit.fontawesome.com/0711f281fb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0711f281fb.js" crossorigin="anonymous"></script> 
+    <script src="./JavaScript/transitions.js"></script>  
+    <script src="./JavaScript/validate_form.js"></script>
 </body>
 </html>
