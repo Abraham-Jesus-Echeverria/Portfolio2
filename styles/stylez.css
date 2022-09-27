@@ -100,7 +100,7 @@ header{
 }  */
 /* ________________________________about____________________________________ */
 .secction_style{ 
-    background-color: var(--secundari-color);
+    background-color: var(--color3);
     color: var(--secundari-color);
     padding: 30px 30px 150px 30px; 
     display: flex; 
