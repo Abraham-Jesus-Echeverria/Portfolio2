@@ -493,10 +493,6 @@ header{
   /* ___________________________________responsive__________________________________ 
    */ 
    @media screen and (max-width: 1200px) { 
-    .image_presentation_container{ 
-      /* background: url(../assets/images/presentacion1.webp) fixed no-repeat center; */
-      background-size: cover;
-    }
     .aboutMe_img{ 
       width: 100%;
     } 
@@ -518,7 +514,10 @@ header{
     
    }
 
-   @media screen and (max-width: 970px) { 
+   @media screen and (max-width: 985px) { 
+    .image_presentation_container{ 
+      background-size: cover;
+    }
     .secction_style_2{
       padding: 30px 2px 150px 2px;
     }
