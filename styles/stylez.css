@@ -494,7 +494,7 @@ header{
    */ 
    @media screen and (max-width: 1200px) { 
     .image_presentation_container{ 
-      /* background: url(../assets/images/presentacion1.webp) fixed no-repeat center; */
+      background: url(../assets/images/presentacion1-mobile.webp) fixed no-repeat center;
       background-size: cover;
     }
     .aboutMe_img{ 
